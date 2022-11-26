@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+
+{% block form %}
+<form method="POST" action="count">
+    {% csrf_token %}
+    <h4 style="color:#979a7d; text-align:center;" id="heading4">ENTER YOUR WORDS</h4>
+    <div style="text-align:center;">
+      <textarea name="input" rows="40" cols="70" style="color:#2098a4; " id="input" ></textarea> <BR>
+      <button type="submit"  style="color:#727934; text-align:center; width:82px; height:30px; margin-top:20px; margin-right:15px;" id="submit">COUNT</button>
+        <button type="reset" style="color:#727934; text-align:center;  width:82px; height:30px;" >RESET</button>
+    </div>
+</form>
+{% endblock form %}
